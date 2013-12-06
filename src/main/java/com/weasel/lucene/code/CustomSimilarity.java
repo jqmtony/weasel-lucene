@@ -9,6 +9,11 @@ import org.apache.lucene.search.DefaultSimilarity;
  */
 public class CustomSimilarity extends DefaultSimilarity {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1140958600274980151L;
+
 	@Override
 	public float computeNorm(String field, FieldInvertState state) {
 		// TODO Auto-generated method stub

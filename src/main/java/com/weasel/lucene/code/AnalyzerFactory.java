@@ -1,7 +1,8 @@
 package com.weasel.lucene.code;
 
 import org.apache.lucene.analysis.Analyzer;
-import org.wltea.analyzer.lucene.IKAnalyzer;
+
+import com.weasel.lucene.ik.lucene.IKAnalyzer;
 
 /**
  * 
