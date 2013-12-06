@@ -75,11 +75,12 @@ public class LuceneRepositorySupport<T extends Entity> extends LuceneTemplate im
 		return doc;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public T findOneById(String _id) {
 		Validate.notEmpty(_id,"_id must not be empty");
 		Query query = new TermQuery(new Term("_id", _id));
-		return super.findOneById(query);
+		return (T)super.findOneById(query);
 	}
 
 	@Override
