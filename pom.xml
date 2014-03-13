@@ -3,36 +3,33 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.weasel.lucene</groupId>
 	<artifactId>weasel-lucene</artifactId>
-	<!-- <version>1.0.0-RELEASE</version> -->
-
-	<parent>
-		<groupId>com.weasel.parent</groupId>
-		<artifactId>weasel-parent</artifactId>
-		<version>1.0.0-RELEASE</version>
-		<relativePath>../weasel-parent/pom.xml</relativePath>
-	</parent>
+	<version>1.0.0-RELEASE</version>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.weasel.core</groupId>
-			<artifactId>weasel-core</artifactId>
+			<groupId>com.weasel.lang</groupId>
+			<artifactId>weasel-lang</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
+			<version>3.6.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-highlighter</artifactId>
+			<version>3.6.2</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+			<version>4.11</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
 		</dependency>
 	</dependencies>
 	

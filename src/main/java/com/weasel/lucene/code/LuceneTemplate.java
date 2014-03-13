@@ -32,9 +32,9 @@ import org.apache.lucene.store.LockObtainFailedException;
 import org.apache.lucene.store.SimpleFSDirectory;
 import org.apache.lucene.util.Version;
 
+import com.weasel.lang.helper.BeanMapConverter;
+import com.weasel.lang.helper.GodHands;
 import com.weasel.lucene.annotation.Highlight;
-import com.weasel.core.helper.BeanMapConverter;
-import com.weasel.core.helper.GodHands;
 
 public class LuceneTemplate implements LuceneOperations {
 
