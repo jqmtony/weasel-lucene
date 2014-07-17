@@ -3,36 +3,48 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.weasel.lucene</groupId>
 	<artifactId>weasel-lucene</artifactId>
-	<version>1.0.0-RELEASE</version>
+
+	<parent>
+		<groupId>com.weasel.root</groupId>
+		<artifactId>weasel-root</artifactId>
+		<version>1.0.0-RELEASE</version>
+		<relativePath>../weasel-root/pom.xml</relativePath>
+	</parent>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.weasel.lang</groupId>
-			<artifactId>weasel-lang</artifactId>
+			<groupId>com.weasel.helper</groupId>
+			<artifactId>weasel-helper</artifactId>
 			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.thoughtworks.xstream</groupId>
+					<artifactId>xstream</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.codehaus.jackson</groupId>
+					<artifactId>jackson-core-asl</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.codehaus.jackson</groupId>
+					<artifactId>jackson-mapper-asl</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
-			<version>3.6.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-highlighter</artifactId>
-			<version>3.6.2</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.6</version>
 		</dependency>
 	</dependencies>
-	
+
 	<repositories>
 		<repository>
 			<id>org.springframework.maven.snapshot</id>

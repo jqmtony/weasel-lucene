@@ -14,7 +14,7 @@ import org.apache.lucene.index.Term;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 
-import com.weasel.lang.helper.GodHands;
+import com.weasel.core.helper.GodHands;
 import com.weasel.lucene.annotation.LuceneIndex;
 import com.weasel.lucene.code.LuceneProperty;
 import com.weasel.lucene.code.LuceneTemplate;
